@@ -1,0 +1,111 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+  }
+  
+  .app-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .dark-mode .app-container {
+    background-color: #2c2c2c;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .controls select,
+  .controls button,
+  .theme-toggle label {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background: white;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .dark-mode .controls select,
+  .dark-mode .controls button,
+  .dark-mode .theme-toggle label {
+    background: #444;
+    color: #f4f4f4;
+    border: 1px solid #666;
+  }
+  
+  #quote-box {
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    transition: background-color 0.3s;
+  }
+  
+  .dark-mode #quote-box {
+    background-color: #3a3a3a;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+  
+  .navigation-buttons button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navigation-buttons {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+  
